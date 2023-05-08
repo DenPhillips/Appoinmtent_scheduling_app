@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="315.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerRecordController">
+   <children>
+      <AnchorPane layoutX="5.0" layoutY="8.0" prefHeight="300.0" prefWidth="640.0" style="-fx-border-radius: 10px; -fx-border-style: solid;">
+         <children>
+            <TableView fx:id="Customer_Records" layoutX="7.0" layoutY="34.0" prefHeight="200.0" prefWidth="626.0">
+              <columns>
+                <TableColumn fx:id="Customer_ID" prefWidth="81.0" text="Customer ID" />
+                <TableColumn fx:id="Customer_Name" prefWidth="110.0" text="Customer Name" />
+                  <TableColumn fx:id="Address" prefWidth="149.0" text="Address" />
+                  <TableColumn fx:id="Postal_Code" prefWidth="102.0" text="Postal Code" />
+                  <TableColumn fx:id="Phone_Number" prefWidth="106.0" text="Phone Number" />
+                  <TableColumn fx:id="Division_ID" prefWidth="77.0" text="Division ID" />
+              </columns>
+            </TableView>
+            <Button fx:id="Add" layoutX="242.0" layoutY="241.0" mnemonicParsing="false" onAction="#Add_click" text="Add">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font></Button>
+            <Button fx:id="Update" layoutX="285.0" layoutY="241.0" mnemonicParsing="false" onAction="#Update_click" text="Update">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font></Button>
+            <Button fx:id="Delete" layoutX="346.0" layoutY="241.0" mnemonicParsing="false" onAction="#Delete_click" text="Delete">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font></Button>
+            <Label layoutX="252.0" layoutY="14.0" text="Customer Records">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="Back" layoutX="577.0" layoutY="267.0" mnemonicParsing="false" onAction="#Back_click" text="Menu">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font></Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="535.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddAppointmentController">
+   <children>
+      <AnchorPane layoutX="6.0" layoutY="5.0" prefHeight="525.0" prefWidth="630.0" style="-fx-border-style: solid; -fx-border-radius: 10px;">
+         <children>
+            <TextField fx:id="Title" layoutX="246.0" layoutY="134.0" />
+            <TextField fx:id="Appointment_ID" disable="true" layoutX="246.0" layoutY="102.0" prefWidth="160.0" promptText="Auto-Gen /  Disabled" />
+            <TextField fx:id="Type" layoutX="246.0" layoutY="264.0" />
+            <TextField fx:id="Description" layoutX="246.0" layoutY="166.0" />
+            <TextField fx:id="Location" layoutX="246.0" layoutY="198.0" />
+            <ComboBox fx:id="Contact" layoutX="246.0" layoutY="229.0" prefHeight="26.0" prefWidth="160.0" />
+            <DatePicker fx:id="End_date" layoutX="79.0" layoutY="399.0" prefHeight="26.0" prefWidth="160.0" />
+            <DatePicker fx:id="Start_date" layoutX="79.0" layoutY="363.0" prefHeight="26.0" prefWidth="160.0" />
+            <Label layoutX="158.0" layoutY="107.0" text="Appoinment ID:" />
+            <Label layoutX="216.0" layoutY="139.0" text="Title:" />
+            <Label layoutX="178.0" layoutY="171.0" text="Description:" />
+            <Label layoutX="192.0" layoutY="202.0" text="Location:" />
+            <Label layoutX="196.0" layoutY="234.0" text="Contact:" />
+            <Label layoutX="211.0" layoutY="269.0" text="Type:" />
+            <Label layoutX="17.0" layoutY="368.0" text="Start Date:" />
+            <Label layoutX="22.0" layoutY="403.0" text="End Date:" />
+            <Label layoutX="172.0" layoutY="301.0" text="Customer ID:" />
+            <Label layoutX="200.0" layoutY="334.0" text="User ID:" />
+            <ComboBox fx:id="Start_hour" layoutX="316.0" layoutY="363.0" prefHeight="26.0" prefWidth="85.0" promptText="Hour" />
+            <ComboBox fx:id="End_minute" layoutX="415.0" layoutY="399.0" prefHeight="26.0" prefWidth="96.0" promptText="Minutes" />
+            <ComboBox fx:id="End_hour" layoutX="316.0" layoutY="399.0" prefHeight="26.0" prefWidth="86.0" promptText="Hour" />
+            <ComboBox fx:id="Start_minute" layoutX="415.0" layoutY="363.0" prefHeight="26.0" prefWidth="96.0" promptText="Minutes" />
+            <Label layoutX="240.0" layoutY="54.0" text="Appointment Information">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Label>
+            <Button layoutX="282.0" layoutY="447.0" mnemonicParsing="false" onAction="#Add_press" text="Add/Update">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Button>
+            <Button layoutX="570.0" layoutY="486.0" mnemonicParsing="false" onAction="#Back_press" text="Back">
+               <font>
+                  <Font name="Arial" size="13.0" />
+               </font>
+            </Button>
+            <Label layoutX="253.0" layoutY="368.0" text="Start Time:" />
+            <Label layoutX="258.0" layoutY="403.0" text="End Time:" />
+            <ComboBox fx:id="Customer_ID" layoutX="246.0" layoutY="297.0" prefHeight="26.0" prefWidth="160.0" />
+            <ComboBox fx:id="User_ID" layoutX="246.0" layoutY="330.0" prefHeight="26.0" prefWidth="160.0" />
+            <ComboBox fx:id="SAP" layoutX="518.0" layoutY="363.0" prefHeight="26.0" prefWidth="96.0" promptText="AM/PM" />
+            <ComboBox fx:id="EAP" layoutX="518.0" layoutY="399.0" prefHeight="26.0" prefWidth="96.0" promptText="AM/PM" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
